@@ -9,7 +9,7 @@ function shuffleArray(array) {
 
 export default {
   async fetch(request, env) {
-    let url = new URL(request.url);
+    let url = new URL("https://sub.xf.free.hr/auto");
 
     let urlsStr = url.pathname.startsWith('/proxy/') ? url.pathname.replace("/proxy/","") : url.pathname.replace("/tproxy/","")
     let urls = urlsStr.split(',');
