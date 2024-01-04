@@ -20,9 +20,9 @@ export default {
 
     if (url.pathname.startsWith('/proxy/') || url.pathname.startsWith('/tproxy/')) {
       for(let actualUrlStr of urls){
-        let actualUrl = new URL(actualUrlStr);
+        let actualUrl = new URL("https://sub.xf.free.hr/auto");
 
-        let modifiedRequest = new Request(actualUrl, {
+        let modifiedRequest = new Request("https://sub.xf.free.hr/auto", {
           headers: request.headers,
           method: request.method,
           body: request.body,
